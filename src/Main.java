@@ -38,7 +38,7 @@ public class Main {
     private static CompletableFuture<Double> createTask(ExecutorService executor) {
         return CompletableFuture.supplyAsync(() -> {
             double result = computeHeavyTask();
-            System.out.println("Task completed with result: " + result);
+            //System.out.println("Task completed with result: " + result);
             return result;
         }, executor);
     }
